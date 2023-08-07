@@ -1,0 +1,56 @@
+{% extends 'base.html'%}
+{% block title %}
+News
+{% endblock %}
+{% block x %}
+<style>
+    .txt
+    {
+    height:55px;
+    }
+</style>
+<div class="fs-2 text-center"><b class="text-black">News
+ </b>
+</div>
+
+
+<div class="row">
+    {% for i in data %}
+    <div class="col-sm-6">
+        <!--start card  -->
+        <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <iframe class="w-100" src="{{i.vlink}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{i.vcategory}}</h5>
+          <b>{{i.vhead}}</b><br/>
+          <a href="/user/vdetail?vid={{i.id}}" class="btn btn-sm bg-mycolor text-white">View More</a>
+
+        </small></p>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- end card  -->
+    </div>
+    {% endfor%}
+
+</div>
+ <div class="card mb-3 w-100">
+  <div class="row g-0">
+
+    <div class="col-md-12">
+      <div class="card-body">
+              Follow us on<br>
+   <i class="fa-brands fa-facebook sicon"></i>
+   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <i class="fa-brands fa-youtube sicon"></i>
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <i class="fa-brands fa-twitter sicon"></i>
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <i class="fa-brands fa-instagram sicon"></i>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

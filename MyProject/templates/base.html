@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {% block title  %}
+
+      {% endblock  %}
+    </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet"/>
+    <link href="{% static 'css/all.css'%}" rel="stylesheet"/>
+<script src="{% static 'js/bootstrap.js'%}"></script>
+<script src="{% static 'js/bootstrap.bundle.js'%}"></script>
+    <style>
+    .ctext{
+       color:#c5366c;
+
+    }
+    .cd{
+     background:#f6f6f6;
+
+    }
+    .btn-mycolor{
+      background:#35871a;
+
+    }
+        .bg-mycolor
+        {
+        background:black;
+        }
+        .text-mycolor
+        {
+        color:#fbc115;
+        }
+         .text-cl
+         {
+
+        font-family:berlin sans FB
+        }
+        .sicon
+        {
+
+        padding:.5%;
+
+        }
+        .sicon:hover
+        {
+        background:;
+        transform:rotate(360deg);
+        transition:all ease 1s;
+        color:#e53935;
+
+        }
+        .ufooter
+        {
+        min-height:40px;
+
+         color:white;
+        font-size:20px;
+        }
+         .bfooter
+        {
+        min-height:30px;
+
+        line-height:50px;
+        color:#999999;
+        font-size:28px;
+        border-top:1px solid white;
+        }
+        .bfooter a
+        {
+        text-decoration:none;
+        }
+        .mfooter{
+        min-height:300px;
+        background:white;
+         color:black;
+        font-size:28px;
+        }
+        .menu{
+        background:rgba(0,0,0,0.98);
+
+        }
+        .h{
+        background:rgba(0,0,0,0.0);
+
+        }
+     .vd{
+        background:rgba(0,0,0,0.60);
+
+        }
+
+    .gm{
+    border-radius:12px;
+   }
+
+            </style>
+</head>
+<bodY>
+<div class="container-fluid h py-2">
+
+    <div class="row top cd  h text-white text-center sticky-md-top">
+<div class="col-sm-1 "></div>
+<div class="col-sm-2 rounded bg-mycolor cd"><img src="{% static 'images/45.jpg'%}" class="d-block  mt-2 mb-2" height="48px" width="52" alt="..." >
+</div>
+
+
+<div class="col-sm-5 rounded cd bg-mycolor ">
+<!-- start menu-->
+          <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-3  mb-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link  " aria-current="page"  href="/user/index/"><b class="text-white ">Home</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/user/Games/"><b class="text-white">Games</b></a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/user/news/"><b class="text-white">Events</b></a>
+        </li >
+            <li class="nav-item">
+                <a class="nav-link" href="/user/community/"><b class="text-white">News</b></a>
+            </li>
+          <li class="nav-item">
+                <a class="nav-link" href="/user/about/"><b class="text-white">AboutUS</b></a>
+            </li>
+
+          <li class="nav-item">
+          <a class="nav-link" href="/admin/"><b class="text-white">Login</b></a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<!-- end menu-->
+        </div>
+
+
+ <div class="col-sm-3 rounded   bg-mycolor ">&nbsp;&nbsp;&nbsp; <i class="fa-brands fa-facebook text-dark sicon mt-2 "></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-youtube sicon text-dark mt-2"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-twitter text-dark sicon mt-3"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram text-dark sicon mt-4"></i></div>
+
+    </div>
+
+
+    <div class="row content bg-light cd " style="min-height:500px;">
+        <div class="col-sm-12 py-2">
+            {% block x %}
+
+            {% endblock %}
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+     <div class="row sticky">
+         <div class="col-sm-1" > </div>
+         <div class="col-sm-5 >
+        <div class="card-group">
+  <div class="card">
+   <img alt="..."  src="{% static 'images/f.webp'%}" class="w-100%" height="450px"  style="min-height:130px;">
+    <div class="card-body">
+      <h5 class="card-title">Supercell dodged ‘the great resignation’, but it’s doubling down on staff wellbeing anyway</h5>
+      <p class="card-text">‘The great resignation’ has not troubled Supercell, says co-chief people officer Lesley Mansford. And yet the company is still working extra hard to keep its staff happy post-pandemic.
+
+Supercell CEO Ilkka Paananen revealed concerns that some staff had pushed themselves too hard in a blog post earlier this year, promising to evolve the company’s approach to team sizes.
+
+At GDC this year, Mansford picked up that thread with a talk about questioning and evolving company culture.<a class="textImageCard_link__6BieO" href="https://supr.cl/wwwnewslink-6"><b>read article</b></a></p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+        </div>
+        </div>
+
+
+
+      <div class="col-sm-5" >
+  <div class="card">
+   <img alt="..."  src="{% static 'images/f2.webp'%}" class="w-100%" height="450px"  width="" style="min-height:130px;">
+    <div class="card-body">
+      <h5 class="card-title">Supercell talks breaking the mould of puzzle games with Clash Quest</h5>
+      <p class="card-text">In my experience, whenever you change some design fundamentals, the whole game needs to be built in a different way. I don’t think many players will notice these differences, but they can have a big impact on how the game needs to be built. For example, just the fact that in Clash Quest the match end trigger is running out of troops, instead of say, running out of turns, has a big impact on many things. Not having a clear reference game makes development harder but also provides lots of fun new design challenges for the team.<a class="textImageCard_link__6BieO" href="https://supr.cl/wwwnewslink-5"><b>read article</b></a></p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+      </div>
+     <div class="col-sm-1" ></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <br>
+    <br>
+    <br>
+    <div class="row ufooter menu  fixed-bottom">
+        <div class="col-sm-8 rounded">
+           <span id="cookieconsent:desc" class="cc-message">Our site uses cookies to enhance your user experience and measure site traffic.<br>  <a  aria-current="page"  href="/user/about
+/">Learn More</a></span>
+    </div>
+        <div class="col-sm-4">
+
+    <h5>&nbsp;&nbsp; &nbsp;</h5>
+
+        </div>
+</div>
+    </div>
+
+
+
+
+
+</div>
+</bodY>
+</html>
